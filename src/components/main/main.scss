@@ -1,0 +1,22 @@
+.main {
+  display: grid;
+  width: 100%;
+  padding: 1rem 0;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 1rem;
+  height: 80%;
+
+  aside {
+  }
+
+  .main-section {
+    overflow: auto;
+    // background-color: white;
+    border-radius: 0.5rem;
+
+    &::-webkit-scrollbar {
+      width: 0px;
+      height: 12px;
+    }
+  }
+}

@@ -1,0 +1,76 @@
+nav {
+  width: 100%;
+  max-width: 1000px;
+  height: 70px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 1rem;
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+
+    ion-icon {
+      font-size: 40px;
+      background-color: transparent;
+    }
+  }
+
+  .search {
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+
+    form {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      background-color: transparent;
+
+      input {
+        border: none;
+        width: 80%;
+        padding: 20px;
+        background-color: transparent;
+
+        &:focus {
+          border: none;
+          outline: none;
+        }
+      }
+
+      button {
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        background-color: transparent;
+
+        ion-icon {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+
+  .seller-button {
+    border-radius: 0.5rem;
+    border: none;
+    color: black;
+    background-color: aquamarine;
+    cursor: not-allowed;
+    font-size: 1.05rem;
+    font-weight: bold;
+    color: white;
+  }
+}

@@ -1,0 +1,56 @@
+.artist {
+  border-radius: 0.5rem;
+  position: relative;
+  margin-bottom: 10px;
+
+  img {
+    width: 100%;
+    border-radius: 0.5rem;
+    aspect-ratio: 16/9;
+  }
+  .profile {
+    position: absolute;
+    z-index: 999;
+    background-color: transparent;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+
+    .profileImg {
+      width: 50px;
+      border-radius: 0.5rem;
+      aspect-ratio: 1;
+      border: 3px solid white;
+
+      &::before {
+        content: "";
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        border-radius: 50%;
+        background-color: blue;
+      }
+    }
+
+    .about {
+      background-color: transparent;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      padding: 0 10px;
+
+      .name {
+        background-color: transparent;
+        font-weight: bold;
+        font-size: 1rem;
+      }
+
+      .tag {
+        background-color: transparent;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

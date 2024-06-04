@@ -1,0 +1,108 @@
+a {
+  color: black;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.asideLeft {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  height: calc(100vh - 160px);
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 0.5rem;
+  font-size: 1.05rem;
+  ul {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: transparent;
+    width: 100%;
+
+    li {
+      list-style: none;
+      background-color: transparent;
+      width: 100%;
+
+      ion-icon {
+        padding: 0 10px;
+        background-color: transparent;
+      }
+
+      a {
+        color: rgba(71, 71, 71, 0.666);
+        display: flex;
+        padding: 0 20px;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: 2.5rem;
+        transition: 0.3s;
+        cursor: pointer;
+
+        &:hover {
+          scale: 1.05;
+          font-weight: bold;
+        }
+      }
+
+      .selected {
+        color: black;
+        font-weight: bold;
+        font-size: 1.12rem;
+        position: relative;
+
+        &::before {
+          content: "";
+          width: 4px;
+          height: 100%;
+          background-color: #7fffd4;
+          position: absolute;
+          left: 0;
+          border-radius: 2px;
+        }
+      }
+    }
+  }
+
+  .register-login {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    // padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+
+    a {
+      width: 100%;
+      display: flex;
+      padding: 0 30px;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      height: 1rem;
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: rgb(255, 123, 123);
+      transition: 0.3s;
+      cursor: pointer;
+
+      &:hover {
+        scale: 1.05;
+      }
+
+      ion-icon {
+        background-color: transparent;
+        font-size: 1.1rem;
+        padding-right: 10px;
+      }
+    }
+  }
+}
